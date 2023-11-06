@@ -1,0 +1,31 @@
+server:
+  port: 10010
+  servlet:
+    context-path: /
+  error:
+    include-message: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,loggers,env,metrics
+    jmx:
+      exposure:
+        include: '*'
+  endpoint:
+    env:
+      show-values: always
+
+
+info:
+  build:
+    artifact: '@project.artifactId@'
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+
+spring:
+  application:
+    name: usage-example
+

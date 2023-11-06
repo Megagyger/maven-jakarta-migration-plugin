@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.calvin</groupId>
+  <artifactId>maven-jakartaee-migration-plugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>maven-jakartaee-migration-plugin</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <java.version>17</java.version>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.release>${java.version}</maven.compiler.release>
+    <maven-plugin-api.version>3.6.2</maven-plugin-api.version>
+    <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
+    <maven-project.version>4.0.0-alpha-8</maven-project.version>
+    <maven-plugin-plugin.version>3.10.1</maven-plugin-plugin.version>
+    <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
+    <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
+    <asm.version>9.3</asm.version>
+  </properties>
+
+
+  <modules>
+    <module>jakartaee-migration-plugin</module>
+    <module>usage-example</module>
+  </modules>
+</project>
